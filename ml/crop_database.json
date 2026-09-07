@@ -1,0 +1,3180 @@
+[
+  {
+    "crop": "Rice",
+    "states": [
+      "Andhra Pradesh",
+      "Telangana",
+      "Tamil Nadu",
+      "Kerala",
+      "West Bengal",
+      "Odisha",
+      "Assam",
+      "Bihar",
+      "Chhattisgarh"
+    ],
+    "soil": [
+      "Clay",
+      "Loamy"
+    ],
+    "season": [
+      "Monsoon"
+    ],
+    "N": [
+      80,
+      120
+    ],
+    "P": [
+      40,
+      60
+    ],
+    "K": [
+      40,
+      60
+    ],
+    "ph": [
+      5.5,
+      6.8
+    ],
+    "temp": [
+      22,
+      35
+    ],
+    "humidity": [
+      70,
+      95
+    ],
+    "rainfall": [
+      150,
+      300
+    ],
+    "water": "High",
+    "duration": "120 Days",
+    "yield": "6-8 Ton/Ha",
+    "fertilizer": "Urea, DAP, Potash",
+    "profit": "High",
+    "diseases": [
+      "Blast",
+      "Brown Spot",
+      "Sheath Blight"
+    ]
+  },
+  {
+    "crop": "Wheat",
+    "states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Uttar Pradesh",
+      "Madhya Pradesh",
+      "Bihar"
+    ],
+    "soil": [
+      "Loamy",
+      "Clay"
+    ],
+    "season": [
+      "Winter"
+    ],
+    "N": [
+      70,
+      110
+    ],
+    "P": [
+      30,
+      50
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      10,
+      25
+    ],
+    "humidity": [
+      40,
+      70
+    ],
+    "rainfall": [
+      40,
+      100
+    ],
+    "water": "Medium",
+    "duration": "110 Days",
+    "yield": "4-6 Ton/Ha",
+    "fertilizer": "Urea, DAP",
+    "profit": "High",
+    "diseases": [
+      "Rust",
+      "Powdery Mildew"
+    ]
+  },
+  {
+    "crop": "Maize",
+    "states": [
+      "Andhra Pradesh",
+      "Telangana",
+      "Karnataka",
+      "Bihar",
+      "Punjab",
+      "Madhya Pradesh"
+    ],
+    "soil": [
+      "Loamy",
+      "Clay",
+      "Sandy"
+    ],
+    "season": [
+      "Monsoon",
+      "Summer"
+    ],
+    "N": [
+      60,
+      100
+    ],
+    "P": [
+      30,
+      60
+    ],
+    "K": [
+      20,
+      50
+    ],
+    "ph": [
+      5.8,
+      7.2
+    ],
+    "temp": [
+      20,
+      32
+    ],
+    "humidity": [
+      50,
+      80
+    ],
+    "rainfall": [
+      60,
+      150
+    ],
+    "water": "Medium",
+    "duration": "100 Days",
+    "yield": "5-7 Ton/Ha",
+    "fertilizer": "DAP, Urea",
+    "profit": "High",
+    "diseases": [
+      "Leaf Blight",
+      "Downy Mildew"
+    ]
+  },
+  {
+    "crop": "Barley",
+    "states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Uttar Pradesh"
+    ],
+    "soil": [
+      "Loamy",
+      "Clay"
+    ],
+    "season": [
+      "Winter"
+    ],
+    "N": [
+      60,
+      100
+    ],
+    "P": [
+      30,
+      50
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      12,
+      25
+    ],
+    "humidity": [
+      40,
+      70
+    ],
+    "rainfall": [
+      30,
+      80
+    ],
+    "water": "Medium",
+    "duration": "100 Days",
+    "yield": "3-5 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Rust",
+      "Leaf Stripe"
+    ]
+  },
+  {
+    "crop": "Pearl Millet",
+    "states": [
+      "Rajasthan",
+      "Gujarat",
+      "Haryana",
+      "Maharashtra"
+    ],
+    "soil": [
+      "Sandy",
+      "Black"
+    ],
+    "season": [
+      "Monsoon"
+    ],
+    "N": [
+      40,
+      80
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      6.0,
+      8.0
+    ],
+    "temp": [
+      25,
+      40
+    ],
+    "humidity": [
+      30,
+      60
+    ],
+    "rainfall": [
+      30,
+      90
+    ],
+    "water": "Low",
+    "duration": "90 Days",
+    "yield": "2-4 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Ergot",
+      "Smut"
+    ]
+  },
+  {
+    "crop": "Sorghum",
+    "states": [
+      "Maharashtra",
+      "Karnataka",
+      "Telangana",
+      "Andhra Pradesh"
+    ],
+    "soil": [
+      "Black",
+      "Loamy"
+    ],
+    "season": [
+      "Monsoon",
+      "Summer"
+    ],
+    "N": [
+      40,
+      80
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      6.0,
+      8.0
+    ],
+    "temp": [
+      25,
+      38
+    ],
+    "humidity": [
+      30,
+      70
+    ],
+    "rainfall": [
+      40,
+      100
+    ],
+    "water": "Low",
+    "duration": "110 Days",
+    "yield": "3-5 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Anthracnose",
+      "Rust"
+    ]
+  },
+  {
+    "crop": "Finger Millet",
+    "states": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Andhra Pradesh",
+      "Odisha"
+    ],
+    "soil": [
+      "Loamy",
+      "Red"
+    ],
+    "season": [
+      "Monsoon"
+    ],
+    "N": [
+      40,
+      70
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      5.5,
+      7.5
+    ],
+    "temp": [
+      20,
+      30
+    ],
+    "humidity": [
+      50,
+      80
+    ],
+    "rainfall": [
+      70,
+      150
+    ],
+    "water": "Medium",
+    "duration": "120 Days",
+    "yield": "2-4 Ton/Ha",
+    "fertilizer": "Urea, DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Blast",
+      "Leaf Spot"
+    ]
+  },
+  {
+    "crop": "Foxtail Millet",
+    "states": [
+      "Andhra Pradesh",
+      "Telangana",
+      "Karnataka"
+    ],
+    "soil": [
+      "Red",
+      "Loamy"
+    ],
+    "season": [
+      "Monsoon"
+    ],
+    "N": [
+      30,
+      60
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      5.5,
+      7.5
+    ],
+    "temp": [
+      22,
+      32
+    ],
+    "humidity": [
+      40,
+      70
+    ],
+    "rainfall": [
+      50,
+      120
+    ],
+    "water": "Low",
+    "duration": "90 Days",
+    "yield": "2-3 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Leaf Spot"
+    ]
+  },
+  {
+    "crop": "Little Millet",
+    "states": [
+      "Tamil Nadu",
+      "Karnataka",
+      "Chhattisgarh"
+    ],
+    "soil": [
+      "Red",
+      "Loamy"
+    ],
+    "season": [
+      "Monsoon"
+    ],
+    "N": [
+      30,
+      60
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      5.5,
+      7.5
+    ],
+    "temp": [
+      22,
+      30
+    ],
+    "humidity": [
+      40,
+      70
+    ],
+    "rainfall": [
+      60,
+      120
+    ],
+    "water": "Low",
+    "duration": "95 Days",
+    "yield": "2-3 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Leaf Blight"
+    ]
+  },
+  {
+    "crop": "Kodo Millet",
+    "states": [
+      "Madhya Pradesh",
+      "Chhattisgarh",
+      "Tamil Nadu"
+    ],
+    "soil": [
+      "Red",
+      "Loamy"
+    ],
+    "season": [
+      "Monsoon"
+    ],
+    "N": [
+      30,
+      60
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      5.5,
+      7.5
+    ],
+    "temp": [
+      22,
+      32
+    ],
+    "humidity": [
+      40,
+      70
+    ],
+    "rainfall": [
+      50,
+      120
+    ],
+    "water": "Low",
+    "duration": "110 Days",
+    "yield": "2-4 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Leaf Spot",
+      "Rust"
+    ]
+  },
+  {
+    "crop": "Green Gram",
+    "states": [
+      "Andhra Pradesh",
+      "Telangana",
+      "Karnataka",
+      "Tamil Nadu",
+      "Maharashtra"
+    ],
+    "soil": [
+      "Loamy",
+      "Black"
+    ],
+    "season": [
+      "Summer",
+      "Monsoon"
+    ],
+    "N": [
+      20,
+      60
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      25,
+      35
+    ],
+    "humidity": [
+      40,
+      70
+    ],
+    "rainfall": [
+      40,
+      100
+    ],
+    "water": "Low",
+    "duration": "70 Days",
+    "yield": "1.2-2 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Powdery Mildew",
+      "Leaf Spot"
+    ]
+  },
+  {
+    "crop": "Black Gram",
+    "states": [
+      "Andhra Pradesh",
+      "Telangana",
+      "Tamil Nadu",
+      "Karnataka"
+    ],
+    "soil": [
+      "Black",
+      "Loamy"
+    ],
+    "season": [
+      "Monsoon"
+    ],
+    "N": [
+      20,
+      60
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      25,
+      35
+    ],
+    "humidity": [
+      50,
+      80
+    ],
+    "rainfall": [
+      50,
+      120
+    ],
+    "water": "Low",
+    "duration": "90 Days",
+    "yield": "1-2 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Yellow Mosaic",
+      "Leaf Spot"
+    ]
+  },
+  {
+    "crop": "Red Gram",
+    "states": [
+      "Andhra Pradesh",
+      "Telangana",
+      "Karnataka",
+      "Maharashtra"
+    ],
+    "soil": [
+      "Black",
+      "Loamy"
+    ],
+    "season": [
+      "Monsoon"
+    ],
+    "N": [
+      20,
+      60
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      22,
+      35
+    ],
+    "humidity": [
+      40,
+      70
+    ],
+    "rainfall": [
+      60,
+      150
+    ],
+    "water": "Low",
+    "duration": "180 Days",
+    "yield": "2-3 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "High",
+    "diseases": [
+      "Wilt",
+      "Sterility Mosaic"
+    ]
+  },
+  {
+    "crop": "Chickpea",
+    "states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Uttar Pradesh",
+      "Madhya Pradesh"
+    ],
+    "soil": [
+      "Black",
+      "Loamy"
+    ],
+    "season": [
+      "Winter"
+    ],
+    "N": [
+      20,
+      60
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      6.0,
+      8.0
+    ],
+    "temp": [
+      15,
+      28
+    ],
+    "humidity": [
+      40,
+      60
+    ],
+    "rainfall": [
+      40,
+      80
+    ],
+    "water": "Low",
+    "duration": "110 Days",
+    "yield": "2-3 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Wilt",
+      "Ascochyta Blight"
+    ]
+  },
+  {
+    "crop": "Cowpea",
+    "states": [
+      "Tamil Nadu",
+      "Karnataka",
+      "Kerala",
+      "Andhra Pradesh"
+    ],
+    "soil": [
+      "Loamy",
+      "Sandy"
+    ],
+    "season": [
+      "Summer",
+      "Monsoon"
+    ],
+    "N": [
+      20,
+      50
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      5.5,
+      7.0
+    ],
+    "temp": [
+      24,
+      34
+    ],
+    "humidity": [
+      40,
+      70
+    ],
+    "rainfall": [
+      50,
+      100
+    ],
+    "water": "Low",
+    "duration": "75 Days",
+    "yield": "1.5-2 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Rust",
+      "Mosaic"
+    ]
+  },
+  {
+    "crop": "Field Bean",
+    "states": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Telangana"
+    ],
+    "soil": [
+      "Loamy",
+      "Red"
+    ],
+    "season": [
+      "Winter",
+      "Monsoon"
+    ],
+    "N": [
+      20,
+      50
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      20,
+      30
+    ],
+    "humidity": [
+      40,
+      70
+    ],
+    "rainfall": [
+      60,
+      120
+    ],
+    "water": "Medium",
+    "duration": "100 Days",
+    "yield": "2 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Leaf Spot",
+      "Rust"
+    ]
+  },
+  {
+    "crop": "Horse Gram",
+    "states": [
+      "Karnataka",
+      "Andhra Pradesh",
+      "Tamil Nadu",
+      "Odisha"
+    ],
+    "soil": [
+      "Red",
+      "Sandy"
+    ],
+    "season": [
+      "Monsoon"
+    ],
+    "N": [
+      20,
+      40
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      5.5,
+      7.5
+    ],
+    "temp": [
+      22,
+      34
+    ],
+    "humidity": [
+      35,
+      65
+    ],
+    "rainfall": [
+      40,
+      90
+    ],
+    "water": "Low",
+    "duration": "110 Days",
+    "yield": "1-2 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Leaf Spot"
+    ]
+  },
+  {
+    "crop": "Lentil",
+    "states": [
+      "Uttar Pradesh",
+      "Bihar",
+      "West Bengal",
+      "Madhya Pradesh"
+    ],
+    "soil": [
+      "Loamy",
+      "Clay"
+    ],
+    "season": [
+      "Winter"
+    ],
+    "N": [
+      20,
+      60
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      15,
+      25
+    ],
+    "humidity": [
+      40,
+      60
+    ],
+    "rainfall": [
+      30,
+      70
+    ],
+    "water": "Low",
+    "duration": "105 Days",
+    "yield": "1.5-2 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Wilt",
+      "Rust"
+    ]
+  },
+  {
+    "crop": "Peas",
+    "states": [
+      "Punjab",
+      "Haryana",
+      "Himachal Pradesh",
+      "Uttarakhand"
+    ],
+    "soil": [
+      "Loamy"
+    ],
+    "season": [
+      "Winter"
+    ],
+    "N": [
+      20,
+      50
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      10,
+      25
+    ],
+    "humidity": [
+      40,
+      70
+    ],
+    "rainfall": [
+      40,
+      80
+    ],
+    "water": "Medium",
+    "duration": "90 Days",
+    "yield": "3-5 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "High",
+    "diseases": [
+      "Powdery Mildew",
+      "Wilt"
+    ]
+  },
+  {
+    "crop": "Rajma",
+    "states": [
+      "Himachal Pradesh",
+      "Jammu and Kashmir",
+      "Uttarakhand"
+    ],
+    "soil": [
+      "Loamy"
+    ],
+    "season": [
+      "Summer"
+    ],
+    "N": [
+      20,
+      50
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      6.0,
+      7.0
+    ],
+    "temp": [
+      15,
+      25
+    ],
+    "humidity": [
+      40,
+      70
+    ],
+    "rainfall": [
+      60,
+      120
+    ],
+    "water": "Medium",
+    "duration": "110 Days",
+    "yield": "2-3 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "High",
+    "diseases": [
+      "Anthracnose",
+      "Rust"
+    ]
+  },
+  {
+    "crop": "Groundnut",
+    "states": [
+      "Andhra Pradesh",
+      "Telangana",
+      "Gujarat",
+      "Tamil Nadu",
+      "Karnataka",
+      "Maharashtra"
+    ],
+    "soil": [
+      "Sandy",
+      "Loamy",
+      "Black"
+    ],
+    "season": [
+      "Summer",
+      "Monsoon"
+    ],
+    "N": [
+      30,
+      70
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      25,
+      35
+    ],
+    "humidity": [
+      40,
+      70
+    ],
+    "rainfall": [
+      50,
+      100
+    ],
+    "water": "Low",
+    "duration": "110 Days",
+    "yield": "2-4 Ton/Ha",
+    "fertilizer": "Gypsum, DAP",
+    "profit": "High",
+    "diseases": [
+      "Leaf Spot",
+      "Rust"
+    ]
+  },
+  {
+    "crop": "Soybean",
+    "states": [
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Telangana",
+      "Karnataka",
+      "Rajasthan"
+    ],
+    "soil": [
+      "Black",
+      "Loamy"
+    ],
+    "season": [
+      "Monsoon"
+    ],
+    "N": [
+      30,
+      70
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      20,
+      30
+    ],
+    "humidity": [
+      50,
+      80
+    ],
+    "rainfall": [
+      60,
+      150
+    ],
+    "water": "Medium",
+    "duration": "100 Days",
+    "yield": "2-3 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "High",
+    "diseases": [
+      "Rust",
+      "Yellow Mosaic"
+    ]
+  },
+  {
+    "crop": "Mustard",
+    "states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Uttar Pradesh",
+      "Madhya Pradesh"
+    ],
+    "soil": [
+      "Loamy",
+      "Clay"
+    ],
+    "season": [
+      "Winter"
+    ],
+    "N": [
+      40,
+      80
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      10,
+      25
+    ],
+    "humidity": [
+      40,
+      60
+    ],
+    "rainfall": [
+      30,
+      70
+    ],
+    "water": "Low",
+    "duration": "110 Days",
+    "yield": "2-3 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "White Rust",
+      "Alternaria Blight"
+    ]
+  },
+  {
+    "crop": "Sunflower",
+    "states": [
+      "Karnataka",
+      "Andhra Pradesh",
+      "Telangana",
+      "Maharashtra",
+      "Tamil Nadu"
+    ],
+    "soil": [
+      "Black",
+      "Loamy"
+    ],
+    "season": [
+      "Winter",
+      "Summer"
+    ],
+    "N": [
+      40,
+      80
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      20,
+      32
+    ],
+    "humidity": [
+      40,
+      70
+    ],
+    "rainfall": [
+      40,
+      100
+    ],
+    "water": "Medium",
+    "duration": "100 Days",
+    "yield": "2-3 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "High",
+    "diseases": [
+      "Downy Mildew",
+      "Rust"
+    ]
+  },
+  {
+    "crop": "Sesame",
+    "states": [
+      "Gujarat",
+      "Rajasthan",
+      "Tamil Nadu",
+      "Andhra Pradesh",
+      "Telangana"
+    ],
+    "soil": [
+      "Sandy",
+      "Loamy"
+    ],
+    "season": [
+      "Summer",
+      "Monsoon"
+    ],
+    "N": [
+      20,
+      50
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      5.5,
+      7.5
+    ],
+    "temp": [
+      25,
+      35
+    ],
+    "humidity": [
+      40,
+      70
+    ],
+    "rainfall": [
+      40,
+      100
+    ],
+    "water": "Low",
+    "duration": "90 Days",
+    "yield": "1-2 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Leaf Spot",
+      "Wilt"
+    ]
+  },
+  {
+    "crop": "Castor",
+    "states": [
+      "Gujarat",
+      "Rajasthan",
+      "Andhra Pradesh",
+      "Telangana"
+    ],
+    "soil": [
+      "Black",
+      "Loamy"
+    ],
+    "season": [
+      "Monsoon"
+    ],
+    "N": [
+      40,
+      80
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      22,
+      35
+    ],
+    "humidity": [
+      40,
+      70
+    ],
+    "rainfall": [
+      50,
+      120
+    ],
+    "water": "Low",
+    "duration": "150 Days",
+    "yield": "2-4 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Wilt",
+      "Leaf Blight"
+    ]
+  },
+  {
+    "crop": "Safflower",
+    "states": [
+      "Maharashtra",
+      "Karnataka",
+      "Telangana"
+    ],
+    "soil": [
+      "Black"
+    ],
+    "season": [
+      "Winter"
+    ],
+    "N": [
+      30,
+      60
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      6.0,
+      8.0
+    ],
+    "temp": [
+      15,
+      30
+    ],
+    "humidity": [
+      35,
+      60
+    ],
+    "rainfall": [
+      30,
+      80
+    ],
+    "water": "Low",
+    "duration": "130 Days",
+    "yield": "1-2 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Rust"
+    ]
+  },
+  {
+    "crop": "Linseed",
+    "states": [
+      "Madhya Pradesh",
+      "Uttar Pradesh",
+      "Bihar",
+      "Chhattisgarh"
+    ],
+    "soil": [
+      "Loamy"
+    ],
+    "season": [
+      "Winter"
+    ],
+    "N": [
+      30,
+      60
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      15,
+      25
+    ],
+    "humidity": [
+      40,
+      60
+    ],
+    "rainfall": [
+      40,
+      80
+    ],
+    "water": "Low",
+    "duration": "120 Days",
+    "yield": "1.5-2 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Rust",
+      "Wilt"
+    ]
+  },
+  {
+    "crop": "Niger Seed",
+    "states": [
+      "Odisha",
+      "Chhattisgarh",
+      "Madhya Pradesh"
+    ],
+    "soil": [
+      "Loamy",
+      "Red"
+    ],
+    "season": [
+      "Monsoon"
+    ],
+    "N": [
+      20,
+      50
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      5.5,
+      7.5
+    ],
+    "temp": [
+      20,
+      30
+    ],
+    "humidity": [
+      50,
+      70
+    ],
+    "rainfall": [
+      60,
+      120
+    ],
+    "water": "Low",
+    "duration": "100 Days",
+    "yield": "1-2 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Leaf Spot"
+    ]
+  },
+  {
+    "crop": "Coconut",
+    "states": [
+      "Kerala",
+      "Tamil Nadu",
+      "Karnataka",
+      "Goa",
+      "Andhra Pradesh"
+    ],
+    "soil": [
+      "Sandy",
+      "Loamy"
+    ],
+    "season": [
+      "All"
+    ],
+    "N": [
+      80,
+      120
+    ],
+    "P": [
+      40,
+      60
+    ],
+    "K": [
+      80,
+      120
+    ],
+    "ph": [
+      5.2,
+      8.0
+    ],
+    "temp": [
+      25,
+      35
+    ],
+    "humidity": [
+      70,
+      95
+    ],
+    "rainfall": [
+      150,
+      300
+    ],
+    "water": "High",
+    "duration": "5 Years",
+    "yield": "80-120 Nuts/Tree",
+    "fertilizer": "NPK, Organic Manure",
+    "profit": "High",
+    "diseases": [
+      "Bud Rot",
+      "Stem Bleeding"
+    ]
+  },
+  {
+    "crop": "Tomato",
+    "states": [
+      "Karnataka",
+      "Andhra Pradesh",
+      "Telangana",
+      "Maharashtra",
+      "Tamil Nadu"
+    ],
+    "soil": [
+      "Loamy",
+      "Black"
+    ],
+    "season": [
+      "Winter",
+      "Summer"
+    ],
+    "N": [
+      60,
+      120
+    ],
+    "P": [
+      40,
+      80
+    ],
+    "K": [
+      40,
+      80
+    ],
+    "ph": [
+      6.0,
+      7.0
+    ],
+    "temp": [
+      18,
+      30
+    ],
+    "humidity": [
+      60,
+      80
+    ],
+    "rainfall": [
+      50,
+      120
+    ],
+    "water": "Medium",
+    "duration": "90 Days",
+    "yield": "40-60 Ton/Ha",
+    "fertilizer": "Urea,DAP,Potash",
+    "profit": "High",
+    "diseases": [
+      "Early Blight",
+      "Late Blight"
+    ]
+  },
+  {
+    "crop": "Potato",
+    "states": [
+      "Uttar Pradesh",
+      "Punjab",
+      "West Bengal",
+      "Bihar"
+    ],
+    "soil": [
+      "Loamy"
+    ],
+    "season": [
+      "Winter"
+    ],
+    "N": [
+      80,
+      120
+    ],
+    "P": [
+      40,
+      80
+    ],
+    "K": [
+      80,
+      120
+    ],
+    "ph": [
+      5.0,
+      6.5
+    ],
+    "temp": [
+      15,
+      25
+    ],
+    "humidity": [
+      60,
+      80
+    ],
+    "rainfall": [
+      40,
+      80
+    ],
+    "water": "Medium",
+    "duration": "110 Days",
+    "yield": "25-35 Ton/Ha",
+    "fertilizer": "DAP,Potash",
+    "profit": "High",
+    "diseases": [
+      "Late Blight",
+      "Black Scurf"
+    ]
+  },
+  {
+    "crop": "Onion",
+    "states": [
+      "Maharashtra",
+      "Karnataka",
+      "Andhra Pradesh",
+      "Gujarat"
+    ],
+    "soil": [
+      "Loamy",
+      "Black"
+    ],
+    "season": [
+      "Winter",
+      "Summer"
+    ],
+    "N": [
+      60,
+      100
+    ],
+    "P": [
+      40,
+      60
+    ],
+    "K": [
+      40,
+      80
+    ],
+    "ph": [
+      6.0,
+      7.0
+    ],
+    "temp": [
+      18,
+      30
+    ],
+    "humidity": [
+      50,
+      70
+    ],
+    "rainfall": [
+      40,
+      80
+    ],
+    "water": "Medium",
+    "duration": "120 Days",
+    "yield": "25-35 Ton/Ha",
+    "fertilizer": "Urea,DAP",
+    "profit": "High",
+    "diseases": [
+      "Purple Blotch",
+      "Downy Mildew"
+    ]
+  },
+  {
+    "crop": "Garlic",
+    "states": [
+      "Madhya Pradesh",
+      "Gujarat",
+      "Rajasthan",
+      "Punjab"
+    ],
+    "soil": [
+      "Loamy"
+    ],
+    "season": [
+      "Winter"
+    ],
+    "N": [
+      50,
+      90
+    ],
+    "P": [
+      30,
+      60
+    ],
+    "K": [
+      40,
+      80
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      15,
+      25
+    ],
+    "humidity": [
+      50,
+      70
+    ],
+    "rainfall": [
+      30,
+      70
+    ],
+    "water": "Medium",
+    "duration": "150 Days",
+    "yield": "10-15 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "High",
+    "diseases": [
+      "Stem Rot",
+      "Rust"
+    ]
+  },
+  {
+    "crop": "Brinjal",
+    "states": [
+      "Andhra Pradesh",
+      "Telangana",
+      "Tamil Nadu",
+      "Karnataka"
+    ],
+    "soil": [
+      "Loamy",
+      "Black"
+    ],
+    "season": [
+      "All"
+    ],
+    "N": [
+      60,
+      120
+    ],
+    "P": [
+      40,
+      80
+    ],
+    "K": [
+      40,
+      80
+    ],
+    "ph": [
+      5.5,
+      7.5
+    ],
+    "temp": [
+      20,
+      35
+    ],
+    "humidity": [
+      60,
+      80
+    ],
+    "rainfall": [
+      50,
+      120
+    ],
+    "water": "Medium",
+    "duration": "120 Days",
+    "yield": "30-40 Ton/Ha",
+    "fertilizer": "Urea,DAP",
+    "profit": "High",
+    "diseases": [
+      "Fruit Borer",
+      "Wilt"
+    ]
+  },
+  {
+    "crop": "Chilli",
+    "states": [
+      "Andhra Pradesh",
+      "Telangana",
+      "Karnataka",
+      "Tamil Nadu"
+    ],
+    "soil": [
+      "Black",
+      "Loamy"
+    ],
+    "season": [
+      "Winter",
+      "Summer"
+    ],
+    "N": [
+      60,
+      120
+    ],
+    "P": [
+      40,
+      80
+    ],
+    "K": [
+      40,
+      80
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      20,
+      35
+    ],
+    "humidity": [
+      50,
+      70
+    ],
+    "rainfall": [
+      50,
+      100
+    ],
+    "water": "Medium",
+    "duration": "150 Days",
+    "yield": "10-15 Ton/Ha",
+    "fertilizer": "DAP,Potash",
+    "profit": "Very High",
+    "diseases": [
+      "Leaf Curl",
+      "Anthracnose"
+    ]
+  },
+  {
+    "crop": "Cabbage",
+    "states": [
+      "Karnataka",
+      "Himachal Pradesh",
+      "Uttarakhand"
+    ],
+    "soil": [
+      "Loamy"
+    ],
+    "season": [
+      "Winter"
+    ],
+    "N": [
+      70,
+      120
+    ],
+    "P": [
+      40,
+      60
+    ],
+    "K": [
+      40,
+      80
+    ],
+    "ph": [
+      6.0,
+      7.0
+    ],
+    "temp": [
+      15,
+      25
+    ],
+    "humidity": [
+      60,
+      80
+    ],
+    "rainfall": [
+      50,
+      100
+    ],
+    "water": "Medium",
+    "duration": "90 Days",
+    "yield": "35-45 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Black Rot",
+      "Club Root"
+    ]
+  },
+  {
+    "crop": "Cauliflower",
+    "states": [
+      "Punjab",
+      "Haryana",
+      "Uttar Pradesh",
+      "Bihar"
+    ],
+    "soil": [
+      "Loamy"
+    ],
+    "season": [
+      "Winter"
+    ],
+    "N": [
+      70,
+      120
+    ],
+    "P": [
+      40,
+      60
+    ],
+    "K": [
+      40,
+      80
+    ],
+    "ph": [
+      6.0,
+      7.0
+    ],
+    "temp": [
+      15,
+      25
+    ],
+    "humidity": [
+      60,
+      80
+    ],
+    "rainfall": [
+      40,
+      100
+    ],
+    "water": "Medium",
+    "duration": "100 Days",
+    "yield": "25-35 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Black Rot",
+      "Downy Mildew"
+    ]
+  },
+  {
+    "crop": "Carrot",
+    "states": [
+      "Punjab",
+      "Haryana",
+      "Himachal Pradesh"
+    ],
+    "soil": [
+      "Sandy",
+      "Loamy"
+    ],
+    "season": [
+      "Winter"
+    ],
+    "N": [
+      40,
+      80
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      40,
+      80
+    ],
+    "ph": [
+      6.0,
+      7.0
+    ],
+    "temp": [
+      15,
+      25
+    ],
+    "humidity": [
+      50,
+      70
+    ],
+    "rainfall": [
+      30,
+      70
+    ],
+    "water": "Medium",
+    "duration": "90 Days",
+    "yield": "20-30 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Leaf Blight"
+    ]
+  },
+  {
+    "crop": "Beetroot",
+    "states": [
+      "Tamil Nadu",
+      "Karnataka",
+      "Maharashtra"
+    ],
+    "soil": [
+      "Loamy"
+    ],
+    "season": [
+      "Winter"
+    ],
+    "N": [
+      40,
+      80
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      40,
+      80
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      15,
+      25
+    ],
+    "humidity": [
+      50,
+      70
+    ],
+    "rainfall": [
+      40,
+      80
+    ],
+    "water": "Medium",
+    "duration": "70 Days",
+    "yield": "20-30 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Leaf Spot"
+    ]
+  },
+  {
+    "crop": "Radish",
+    "states": [
+      "Punjab",
+      "Haryana",
+      "Uttar Pradesh"
+    ],
+    "soil": [
+      "Sandy",
+      "Loamy"
+    ],
+    "season": [
+      "Winter"
+    ],
+    "N": [
+      30,
+      70
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      20,
+      40
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      15,
+      25
+    ],
+    "humidity": [
+      50,
+      70
+    ],
+    "rainfall": [
+      30,
+      70
+    ],
+    "water": "Medium",
+    "duration": "50 Days",
+    "yield": "20-30 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "White Rust"
+    ]
+  },
+  {
+    "crop": "Cucumber",
+    "states": [
+      "Karnataka",
+      "Andhra Pradesh",
+      "Tamil Nadu"
+    ],
+    "soil": [
+      "Loamy",
+      "Sandy"
+    ],
+    "season": [
+      "Summer"
+    ],
+    "N": [
+      50,
+      90
+    ],
+    "P": [
+      30,
+      60
+    ],
+    "K": [
+      30,
+      60
+    ],
+    "ph": [
+      6.0,
+      7.0
+    ],
+    "temp": [
+      22,
+      35
+    ],
+    "humidity": [
+      60,
+      80
+    ],
+    "rainfall": [
+      50,
+      100
+    ],
+    "water": "Medium",
+    "duration": "65 Days",
+    "yield": "25-35 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "High",
+    "diseases": [
+      "Downy Mildew"
+    ]
+  },
+  {
+    "crop": "Pumpkin",
+    "states": [
+      "Kerala",
+      "Tamil Nadu",
+      "Karnataka",
+      "Andhra Pradesh"
+    ],
+    "soil": [
+      "Loamy",
+      "Sandy"
+    ],
+    "season": [
+      "Summer",
+      "Monsoon"
+    ],
+    "N": [
+      40,
+      80
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      40,
+      80
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      22,
+      35
+    ],
+    "humidity": [
+      60,
+      80
+    ],
+    "rainfall": [
+      50,
+      120
+    ],
+    "water": "Medium",
+    "duration": "120 Days",
+    "yield": "20-30 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Powdery Mildew"
+    ]
+  },
+  {
+    "crop": "Bottle Gourd",
+    "states": [
+      "Uttar Pradesh",
+      "Bihar",
+      "West Bengal",
+      "Andhra Pradesh"
+    ],
+    "soil": [
+      "Loamy",
+      "Sandy"
+    ],
+    "season": [
+      "Summer"
+    ],
+    "N": [
+      40,
+      80
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      40,
+      80
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      22,
+      35
+    ],
+    "humidity": [
+      60,
+      80
+    ],
+    "rainfall": [
+      40,
+      100
+    ],
+    "water": "Medium",
+    "duration": "90 Days",
+    "yield": "25-35 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "Medium",
+    "diseases": [
+      "Fruit Rot"
+    ]
+  },
+  {
+    "crop": "Okra",
+    "states": [
+      "Andhra Pradesh",
+      "Telangana",
+      "Karnataka",
+      "Tamil Nadu",
+      "Maharashtra"
+    ],
+    "soil": [
+      "Loamy",
+      "Black"
+    ],
+    "season": [
+      "Summer",
+      "Monsoon"
+    ],
+    "N": [
+      50,
+      90
+    ],
+    "P": [
+      30,
+      60
+    ],
+    "K": [
+      30,
+      60
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      22,
+      35
+    ],
+    "humidity": [
+      50,
+      80
+    ],
+    "rainfall": [
+      40,
+      100
+    ],
+    "water": "Medium",
+    "duration": "60 Days",
+    "yield": "12-18 Ton/Ha",
+    "fertilizer": "DAP",
+    "profit": "High",
+    "diseases": [
+      "Yellow Vein Mosaic",
+      "Powdery Mildew"
+    ]
+  },
+  {
+    "crop": "Mango",
+    "states": [
+      "Andhra Pradesh",
+      "Telangana",
+      "Karnataka",
+      "Tamil Nadu",
+      "Maharashtra",
+      "Uttar Pradesh"
+    ],
+    "soil": [
+      "Loamy",
+      "Red",
+      "Black"
+    ],
+    "season": [
+      "All"
+    ],
+    "N": [
+      80,
+      120
+    ],
+    "P": [
+      40,
+      80
+    ],
+    "K": [
+      80,
+      120
+    ],
+    "ph": [
+      5.5,
+      7.5
+    ],
+    "temp": [
+      24,
+      35
+    ],
+    "humidity": [
+      50,
+      80
+    ],
+    "rainfall": [
+      75,
+      250
+    ],
+    "water": "Medium",
+    "duration": "5 Years",
+    "yield": "10-20 Ton/Ha",
+    "fertilizer": "Organic Manure,NPK",
+    "profit": "Very High",
+    "diseases": [
+      "Anthracnose",
+      "Powdery Mildew"
+    ]
+  },
+  {
+    "crop": "Banana",
+    "states": [
+      "Tamil Nadu",
+      "Kerala",
+      "Karnataka",
+      "Andhra Pradesh",
+      "Telangana",
+      "Maharashtra"
+    ],
+    "soil": [
+      "Loamy",
+      "Clay"
+    ],
+    "season": [
+      "All"
+    ],
+    "N": [
+      100,
+      150
+    ],
+    "P": [
+      50,
+      80
+    ],
+    "K": [
+      100,
+      150
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      25,
+      35
+    ],
+    "humidity": [
+      70,
+      90
+    ],
+    "rainfall": [
+      100,
+      250
+    ],
+    "water": "High",
+    "duration": "12 Months",
+    "yield": "40-60 Ton/Ha",
+    "fertilizer": "Urea,DAP,Potash",
+    "profit": "Very High",
+    "diseases": [
+      "Panama Wilt",
+      "Sigatoka"
+    ]
+  },
+  {
+    "crop": "Apple",
+    "states": [
+      "Himachal Pradesh",
+      "Jammu and Kashmir",
+      "Uttarakhand"
+    ],
+    "soil": [
+      "Loamy"
+    ],
+    "season": [
+      "Winter"
+    ],
+    "N": [
+      60,
+      100
+    ],
+    "P": [
+      30,
+      60
+    ],
+    "K": [
+      60,
+      100
+    ],
+    "ph": [
+      5.5,
+      6.8
+    ],
+    "temp": [
+      5,
+      24
+    ],
+    "humidity": [
+      50,
+      70
+    ],
+    "rainfall": [
+      80,
+      150
+    ],
+    "water": "Medium",
+    "duration": "5 Years",
+    "yield": "20-30 Ton/Ha",
+    "fertilizer": "Organic Manure",
+    "profit": "Very High",
+    "diseases": [
+      "Apple Scab",
+      "Fire Blight"
+    ]
+  },
+  {
+    "crop": "Orange",
+    "states": [
+      "Maharashtra",
+      "Punjab",
+      "Rajasthan",
+      "Madhya Pradesh"
+    ],
+    "soil": [
+      "Loamy",
+      "Black"
+    ],
+    "season": [
+      "All"
+    ],
+    "N": [
+      70,
+      120
+    ],
+    "P": [
+      40,
+      80
+    ],
+    "K": [
+      70,
+      120
+    ],
+    "ph": [
+      5.5,
+      7.5
+    ],
+    "temp": [
+      15,
+      35
+    ],
+    "humidity": [
+      50,
+      80
+    ],
+    "rainfall": [
+      75,
+      200
+    ],
+    "water": "Medium",
+    "duration": "4 Years",
+    "yield": "15-25 Ton/Ha",
+    "fertilizer": "NPK",
+    "profit": "High",
+    "diseases": [
+      "Citrus Canker",
+      "Greening"
+    ]
+  },
+  {
+    "crop": "Grapes",
+    "states": [
+      "Maharashtra",
+      "Karnataka",
+      "Tamil Nadu"
+    ],
+    "soil": [
+      "Loamy",
+      "Black"
+    ],
+    "season": [
+      "All"
+    ],
+    "N": [
+      80,
+      120
+    ],
+    "P": [
+      40,
+      60
+    ],
+    "K": [
+      80,
+      120
+    ],
+    "ph": [
+      6.0,
+      7.5
+    ],
+    "temp": [
+      20,
+      35
+    ],
+    "humidity": [
+      50,
+      70
+    ],
+    "rainfall": [
+      50,
+      100
+    ],
+    "water": "Medium",
+    "duration": "3 Years",
+    "yield": "20-30 Ton/Ha",
+    "fertilizer": "NPK",
+    "profit": "Very High",
+    "diseases": [
+      "Downy Mildew",
+      "Powdery Mildew"
+    ]
+  },
+  {
+    "crop": "Guava",
+    "states": [
+      "Uttar Pradesh",
+      "Bihar",
+      "Andhra Pradesh",
+      "Telangana"
+    ],
+    "soil": [
+      "Loamy",
+      "Clay"
+    ],
+    "season": [
+      "All"
+    ],
+    "N": [
+      60,
+      100
+    ],
+    "P": [
+      30,
+      60
+    ],
+    "K": [
+      60,
+      100
+    ],
+    "ph": [
+      5.5,
+      7.5
+    ],
+    "temp": [
+      20,
+      35
+    ],
+    "humidity": [
+      50,
+      80
+    ],
+    "rainfall": [
+      75,
+      150
+    ],
+    "water": "Medium",
+    "duration": "3 Years",
+    "yield": "20-30 Ton/Ha",
+    "fertilizer": "Organic Manure",
+    "profit": "High",
+    "diseases": [
+      "Wilt",
+      "Fruit Fly"
+    ]
+  },
+  {
+    "crop": "Papaya",
+    "states": [
+      "Andhra Pradesh",
+      "Karnataka",
+      "Tamil Nadu",
+      "Gujarat"
+    ],
+    "soil": [
+      "Loamy"
+    ],
+    "season": [
+      "All"
+    ],
+    "N": [
+      80,
+      120
+    ],
+    "P": [
+      40,
+      80
+    ],
+    "K": [
+      80,
+      120
+    ],
+    "ph": [
+      6.0,
+      7.0
+    ],
+    "temp": [
+      22,
+      35
+    ],
+    "humidity": [
+      60,
+      80
+    ],
+    "rainfall": [
+      75,
+      200
+    ],
+    "water": "Medium",
+    "duration": "10 Months",
+    "yield": "40-60 Ton/Ha",
+    "fertilizer": "Urea,NPK",
+    "profit": "High",
+    "diseases": [
+      "Ring Spot Virus",
+      "Anthracnose"
+    ]
+  },
+  {
+    "crop": "Pomegranate",
+    "states": [
+      "Maharashtra",
+      "Karnataka",
+      "Andhra Pradesh",
+      "Gujarat"
+    ],
+    "soil": [
+      "Black",
+      "Loamy"
+    ],
+    "season": [
+      "All"
+    ],
+    "N": [
+      60,
+      100
+    ],
+    "P": [
+      30,
+      60
+    ],
+    "K": [
+      60,
+      100
+    ],
+    "ph": [
+      5.5,
+      7.5
+    ],
+    "temp": [
+      20,
+      35
+    ],
+    "humidity": [
+      40,
+      70
+    ],
+    "rainfall": [
+      40,
+      100
+    ],
+    "water": "Low",
+    "duration": "3 Years",
+    "yield": "15-20 Ton/Ha",
+    "fertilizer": "Organic Manure",
+    "profit": "Very High",
+    "diseases": [
+      "Bacterial Blight",
+      "Fruit Rot"
+    ]
+  },
+  {
+    "crop": "Pineapple",
+    "states": [
+      "Assam",
+      "Meghalaya",
+      "Kerala",
+      "West Bengal"
+    ],
+    "soil": [
+      "Sandy",
+      "Loamy"
+    ],
+    "season": [
+      "All"
+    ],
+    "N": [
+      60,
+      100
+    ],
+    "P": [
+      30,
+      60
+    ],
+    "K": [
+      60,
+      100
+    ],
+    "ph": [
+      4.5,
+      6.5
+    ],
+    "temp": [
+      20,
+      32
+    ],
+    "humidity": [
+      70,
+      90
+    ],
+    "rainfall": [
+      100,
+      300
+    ],
+    "water": "High",
+    "duration": "18 Months",
+    "yield": "40-60 Ton/Ha",
+    "fertilizer": "NPK",
+    "profit": "High",
+    "diseases": [
+      "Heart Rot",
+      "Wilt"
+    ]
+  },
+  {
+    "crop": "Litchi",
+    "states": [
+      "Bihar",
+      "West Bengal",
+      "Assam"
+    ],
+    "soil": [
+      "Loamy"
+    ],
+    "season": [
+      "All"
+    ],
+    "N": [
+      60,
+      100
+    ],
+    "P": [
+      30,
+      60
+    ],
+    "K": [
+      60,
+      100
+    ],
+    "ph": [
+      5.5,
+      7.0
+    ],
+    "temp": [
+      20,
+      35
+    ],
+    "humidity": [
+      60,
+      90
+    ],
+    "rainfall": [
+      100,
+      250
+    ],
+    "water": "Medium",
+    "duration": "5 Years",
+    "yield": "10-15 Ton/Ha",
+    "fertilizer": "Organic Manure",
+    "profit": "High",
+    "diseases": [
+      "Fruit Borer",
+      "Leaf Spot"
+    ]
+  },
+  {
+    "crop": "Tea",
+    "states": [
+      "Assam",
+      "West Bengal",
+      "Kerala",
+      "Tamil Nadu"
+    ],
+    "soil": [
+      "Loamy",
+      "Red"
+    ],
+    "season": [
+      "All"
+    ],
+    "N": [
+      80,
+      120
+    ],
+    "P": [
+      40,
+      60
+    ],
+    "K": [
+      40,
+      80
+    ],
+    "ph": [
+      4.5,
+      5.5
+    ],
+    "temp": [
+      18,
+      30
+    ],
+    "humidity": [
+      70,
+      95
+    ],
+    "rainfall": [
+      150,
+      300
+    ],
+    "water": "High",
+    "duration": "3 Years",
+    "yield": "2-3 Ton/Ha",
+    "fertilizer": "NPK",
+    "profit": "Very High",
+    "diseases": [
+      "Blister Blight",
+      "Root Rot"
+    ]
+  },
+  {
+    "crop": "Coffee",
+    "states": [
+      "Karnataka",
+      "Kerala",
+      "Tamil Nadu"
+    ],
+    "soil": [
+      "Loamy",
+      "Red"
+    ],
+    "season": [
+      "All"
+    ],
+    "N": [
+      60,
+      100
+    ],
+    "P": [
+      30,
+      60
+    ],
+    "K": [
+      40,
+      80
+    ],
+    "ph": [
+      5.0,
+      6.5
+    ],
+    "temp": [
+      18,
+      28
+    ],
+    "humidity": [
+      70,
+      90
+    ],
+    "rainfall": [
+      120,
+      250
+    ],
+    "water": "Medium",
+    "duration": "4 Years",
+    "yield": "1-2 Ton/Ha",
+    "fertilizer": "Organic Manure",
+    "profit": "Very High",
+    "diseases": [
+      "Coffee Rust",
+      "Berry Disease"
+    ]
+  },
+  {
+    "crop": "Rubber",
+    "states": [
+      "Kerala",
+      "Tamil Nadu",
+      "Karnataka"
+    ],
+    "soil": [
+      "Loamy"
+    ],
+    "season": [
+      "All"
+    ],
+    "N": [
+      80,
+      120
+    ],
+    "P": [
+      40,
+      80
+    ],
+    "K": [
+      60,
+      100
+    ],
+    "ph": [
+      4.5,
+      6.5
+    ],
+    "temp": [
+      25,
+      35
+    ],
+    "humidity": [
+      75,
+      95
+    ],
+    "rainfall": [
+      200,
+      350
+    ],
+    "water": "High",
+    "duration": "7 Years",
+    "yield": "1500-2000 Kg/Ha",
+    "fertilizer": "NPK",
+    "profit": "Very High",
+    "diseases": [
+      "Leaf Fall",
+      "Root Rot"
+    ]
+  },
+  {
+    "crop": "Cashew",
+    "states": [
+      "Goa",
+      "Kerala",
+      "Karnataka",
+      "Andhra Pradesh"
+    ],
+    "soil": [
+      "Sandy",
+      "Red"
+    ],
+    "season": [
+      "All"
+    ],
+    "N": [
+      40,
+      80
+    ],
+    "P": [
+      20,
+      40
+    ],
+    "K": [
+      40,
+      80
+    ],
+    "ph": [
+      5.5,
+      7.0
+    ],
+    "temp": [
+      24,
+      35
+    ],
+    "humidity": [
+      60,
+      80
+    ],
+    "rainfall": [
+      100,
+      250
+    ],
+    "water": "Medium",
+    "duration": "3 Years",
+    "yield": "1-2 Ton/Ha",
+    "fertilizer": "Organic Manure",
+    "profit": "High",
+    "diseases": [
+      "Tea Mosquito Bug",
+      "Anthracnose"
+    ]
+  },
+  {
+    "crop": "Arecanut",
+    "states": [
+      "Karnataka",
+      "Kerala",
+      "Assam"
+    ],
+    "soil": [
+      "Loamy"
+    ],
+    "season": [
+      "All"
+    ],
+    "N": [
+      80,
+      120
+    ],
+    "P": [
+      40,
+      60
+    ],
+    "K": [
+      60,
+      100
+    ],
+    "ph": [
+      5.5,
+      6.8
+    ],
+    "temp": [
+      20,
+      35
+    ],
+    "humidity": [
+      70,
+      90
+    ],
+    "rainfall": [
+      150,
+      300
+    ],
+    "water": "High",
+    "duration": "5 Years",
+    "yield": "2-3 Ton/Ha",
+    "fertilizer": "NPK",
+    "profit": "High",
+    "diseases": [
+      "Yellow Leaf Disease",
+      "Bud Rot"
+    ]
+  }
+]
