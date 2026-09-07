@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container mt-4">
+
+<div class="card shadow">
+
+<div class="card-header bg-success text-white">
+
+<h2 class="text-center">
+
+Disease History
+
+</h2>
+
+</div>
+
+<div class="card-body">
+
+<table class="table table-bordered table-hover">
+
+<thead class="table-success">
+
+<tr>
+
+<th>ID</th>
+
+<th>Crop</th>
+
+<th>Disease</th>
+
+<th>Confidence</th>
+
+<th>Severity</th>
+
+<th>Medicine</th>
+
+<th>Date</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+{% for row in history %}
+
+<tr>
+
+<td>{{row.id}}</td>
+
+<td>{{row.crop}}</td>
+
+<td>{{row.disease}}</td>
+
+<td>{{row.confidence}}%</td>
+
+<td>{{row.severity}}</td>
+
+<td>{{row.medicine}}</td>
+
+<td>{{row.created_at}}</td>
+
+</tr>
+
+{% endfor %}
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+{% endblock %}

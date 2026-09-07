@@ -1,0 +1,408 @@
+
+/* =========================
+   THEME VARIABLES
+   Light theme is the default (:root). Dark theme overrides
+   via [data-theme="dark"] on <html>, toggled by the navbar
+   button (see script.js) and persisted in localStorage.
+========================= */
+
+:root{
+    --bg-image: url('/static/images/agriculture_bg.jpg');
+    --overlay: rgba(0,0,0,0.45);
+    --hero-overlay: rgba(0,0,0,0.55);
+
+    --body-text: #1b1b1b;
+    --card-bg: rgba(255,255,255,0.94);
+    --card-text: #1b1b1b;
+    --card-shadow: rgba(0,0,0,0.2);
+    --card-shadow-hover: rgba(0,0,0,0.3);
+
+    --navbar-bg: #198754;
+    --footer-bg: #198754;
+
+    --table-bg: #ffffff;
+    --table-text: #1b1b1b;
+    --table-border: #dee2e6;
+
+    --input-bg: #ffffff;
+    --input-text: #1b1b1b;
+    --input-border: #ced4da;
+
+    --muted-text: #6c757d;
+    --link-hover: #ffc107;
+}
+
+html[data-theme="dark"]{
+    --bg-image: linear-gradient(180deg, #0e1a12 0%, #142a1c 100%);
+    --overlay: rgba(0,0,0,0.55);
+    --hero-overlay: rgba(0,0,0,0.65);
+
+    --body-text: #e8e8e8;
+    --card-bg: rgba(28,34,30,0.94);
+    --card-text: #eaeaea;
+    --card-shadow: rgba(0,0,0,0.5);
+    --card-shadow-hover: rgba(0,0,0,0.65);
+
+    --navbar-bg: #0f3d24;
+    --footer-bg: #0f3d24;
+
+    --table-bg: #1c221e;
+    --table-text: #eaeaea;
+    --table-border: #3a4a3d;
+
+    --input-bg: #23291f;
+    --input-text: #f0f0f0;
+    --input-border: #4a5a4d;
+
+    --muted-text: #a8b0a9;
+    --link-hover: #ffd54a;
+}
+
+/* Smooth theme switch instead of an abrupt colour jump */
+body, .card, .table, .form-control, .navbar, footer{
+    transition: background-color 0.35s ease, color 0.35s ease,
+                background-image 0.35s ease, border-color 0.35s ease;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body{
+
+    margin:0;
+    padding:0;
+
+    font-family: 'Segoe UI', Arial, sans-serif;
+
+    background-image: var(--bg-image);
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    min-height:100vh;
+
+    position: relative;
+
+    color: var(--body-text);
+}
+
+
+/* =========================
+   DARK BACKGROUND OVERLAY
+   (a soft tint over the photo so text stays readable in
+   both themes; darker/greener in dark mode)
+========================= */
+
+body::before{
+
+    content:"";
+
+    position: fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background: var(--overlay);
+
+    z-index:-1;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section{
+
+    background-image: var(--bg-image);
+
+    background-size: cover;
+
+    background-position: center;
+
+    height: 500px;
+
+    position: relative;
+
+    border-radius: 0 0 20px 20px;
+}
+
+
+/* =========================
+   HERO OVERLAY
+========================= */
+
+.overlay{
+
+    background: var(--hero-overlay);
+
+    height:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    color:white;
+
+    border-radius: 0 0 20px 20px;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+
+    background-color: var(--navbar-bg) !important;
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.3);
+}
+
+
+.navbar-brand{
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    color:white !important;
+}
+
+
+.nav-link{
+
+    color:white !important;
+
+    margin-left:10px;
+
+    transition:0.3s;
+}
+
+
+.nav-link:hover{
+
+    color: var(--link-hover) !important;
+
+    transform:scale(1.05);
+}
+
+
+/* Theme toggle button */
+
+#theme-toggle-btn{
+
+    background: rgba(255,255,255,0.15);
+
+    border: 1px solid rgba(255,255,255,0.4);
+
+    color: white;
+
+    border-radius: 20px;
+
+    padding: 4px 14px;
+
+    margin-left: 10px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+#theme-toggle-btn:hover{
+
+    background: rgba(255,255,255,0.3);
+
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   IMAGE CARD SIZE
+========================= */
+
+.image-size{
+
+    height:250px;
+
+    object-fit:cover;
+
+    border-top-left-radius:15px;
+
+    border-top-right-radius:15px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card{
+
+    transition:0.4s;
+
+    border:none;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    background: var(--card-bg);
+
+    color: var(--card-text);
+
+    backdrop-filter: blur(5px);
+
+    box-shadow:0 4px 15px var(--card-shadow);
+}
+
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 8px 20px var(--card-shadow-hover);
+}
+
+
+.card-header.bg-success{
+
+    background-color:#198754 !important;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-success{
+
+    border:none;
+
+    transition:0.3s;
+}
+
+
+.btn-success:hover{
+
+    background:#146c43;
+
+    transform:scale(1.03);
+}
+
+
+/* =========================
+   FORMS
+========================= */
+
+.form-control{
+
+    border-radius:10px;
+
+    padding:10px;
+
+    background-color: var(--input-bg);
+
+    color: var(--input-text);
+
+    border-color: var(--input-border);
+}
+
+
+.form-control:focus{
+
+    box-shadow:0 0 10px rgba(25,135,84,0.4);
+
+    border-color:#198754;
+
+    background-color: var(--input-bg);
+
+    color: var(--input-text);
+}
+
+.form-label, label{
+
+    color: var(--card-text);
+}
+
+
+/* =========================
+   TABLES
+========================= */
+
+.table{
+
+    background: var(--table-bg);
+
+    color: var(--table-text);
+
+    border-radius:10px;
+
+    overflow:hidden;
+}
+
+.table td, .table th{
+    border-color: var(--table-border);
+}
+
+.table-hover>tbody>tr:hover>*{
+    background-color: rgba(25,135,84,0.12);
+    color: var(--table-text);
+}
+
+
+/* =========================
+   TEXT-MUTED
+========================= */
+
+.text-muted{
+    color: var(--muted-text) !important;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    margin-top:50px;
+
+    background: var(--footer-bg) !important;
+
+    color:white;
+
+    text-align:center;
+
+    padding:15px;
+
+    font-size:18px;
+}
+
+
+/* =========================
+   ALERTS
+========================= */
+
+.alert{
+
+    border-radius:10px;
+}

@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+    <div class="card shadow-lg p-5">
+
+        <h1 class="text-center text-success mb-5">
+            Fertilizer Suggestion System
+        </h1>
+
+        <form method="POST">
+
+            <div class="mb-4">
+
+                <label class="form-label">
+                    Enter Crop Name
+                </label>
+
+                <input
+                    type="text"
+                    name="crop_name"
+                    class="form-control"
+                    placeholder="Example: rice"
+                    required
+                >
+
+            </div>
+
+            <button type="submit" class="btn btn-success w-100">
+                Get Fertilizer Suggestions
+            </button>
+
+        </form>
+
+        {% if fertilizer_result %}
+
+        <hr class="mt-5">
+
+        <h2 class="text-center text-success mb-4">
+
+            Fertilizers for "{{ crop_name.title() }}"
+
+        </h2>
+
+        <!-- BEST -->
+
+        <div class="card border-success shadow mb-4">
+
+            <div class="card-header bg-success text-white">
+
+                <h3>Best Fertilizers</h3>
+
+            </div>
+
+            <div class="card-body">
+
+                <div class="row">
+
+                    {% for item in fertilizer_result['Best'] %}
+
+                    <div class="col-md-4 mb-3">
+
+                        <div class="card shadow-sm border-success">
+
+                            <div class="card-body text-center">
+
+                                🌱 {{ item }}
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- GOOD -->
+
+        <div class="card border-primary shadow mb-4">
+
+            <div class="card-header bg-primary text-white">
+
+                <h3>Good Fertilizers</h3>
+
+            </div>
+
+            <div class="card-body">
+
+                <div class="row">
+
+                    {% for item in fertilizer_result['Good'] %}
+
+                    <div class="col-md-4 mb-3">
+
+                        <div class="card shadow-sm border-primary">
+
+                            <div class="card-body text-center">
+
+                                🌿 {{ item }}
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- AVERAGE -->
+
+        <div class="card border-warning shadow mb-4">
+
+            <div class="card-header bg-warning text-dark">
+
+                <h3>Average Fertilizers</h3>
+
+            </div>
+
+            <div class="card-body">
+
+                <div class="row">
+
+                    {% for item in fertilizer_result['Average'] %}
+
+                    <div class="col-md-4 mb-3">
+
+                        <div class="card shadow-sm border-warning">
+
+                            <div class="card-body text-center">
+
+                                🌾 {{ item }}
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+{% endblock %}

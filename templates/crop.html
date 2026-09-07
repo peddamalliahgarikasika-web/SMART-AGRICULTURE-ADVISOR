@@ -1,0 +1,274 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mt-4">
+
+<div class="card shadow-lg p-4">
+
+<h2 class="text-center text-success mb-4">
+{{ t('crop_page_title') }}
+</h2>
+
+<form method="POST">
+
+<div class="row">
+
+<div class="col-md-4 mb-3">
+
+<label>{{ t('label_state') }}</label>
+
+<select class="form-control" name="state" required>
+
+{% for s in ["Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chhattisgarh","Goa","Gujarat","Haryana","Himachal Pradesh","Jharkhand","Karnataka","Kerala","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttar Pradesh","Uttarakhand","West Bengal"] %}
+<option value="{{ s }}">{{ t('state_' ~ s) }}</option>
+{% endfor %}
+
+</select>
+
+</div>
+
+<div class="col-md-4 mb-3">
+
+<label>{{ t('label_soil_type') }}</label>
+
+<select class="form-control" name="soil">
+
+{% for s in ["Clay","Loamy","Black","Sandy","Red"] %}
+<option value="{{ s }}">{{ t('soil_' ~ s) }}</option>
+{% endfor %}
+
+</select>
+
+</div>
+
+<div class="col-md-4 mb-3">
+
+<label>{{ t('label_season') }}</label>
+
+<select class="form-control" name="season">
+
+{% for s in ["Summer","Winter","Monsoon"] %}
+<option value="{{ s }}">{{ t('season_' ~ s) }}</option>
+{% endfor %}
+
+</select>
+
+</div>
+
+<div class="col-md-4 mb-3">
+
+<label>{{ t('label_nitrogen') }}</label>
+
+<input
+type="number"
+class="form-control"
+name="nitrogen"
+required>
+
+</div>
+
+<div class="col-md-4 mb-3">
+
+<label>{{ t('label_phosphorus') }}</label>
+
+<input
+type="number"
+class="form-control"
+name="phosphorus"
+required>
+
+</div>
+
+<div class="col-md-4 mb-3">
+
+<label>{{ t('label_potassium') }}</label>
+
+<input
+type="number"
+class="form-control"
+name="potassium"
+required>
+
+</div>
+
+<div class="col-md-4 mb-3">
+
+<label>{{ t('label_ph') }}</label>
+
+<input
+type="number"
+step="0.1"
+class="form-control"
+name="ph"
+required>
+
+</div>
+
+<div class="col-md-4 mb-3">
+
+<label>{{ t('label_temperature') }}</label>
+
+<input
+type="number"
+step="0.1"
+class="form-control"
+name="temperature"
+required>
+
+</div>
+
+<div class="col-md-4 mb-3">
+
+<label>{{ t('label_humidity') }}</label>
+
+<input
+type="number"
+step="0.1"
+class="form-control"
+name="humidity"
+required>
+
+</div>
+
+<div class="col-md-6 mb-3">
+
+<label>{{ t('label_rainfall') }}</label>
+
+<input
+type="number"
+step="0.1"
+class="form-control"
+name="rainfall"
+required>
+
+</div>
+
+<div class="col-md-6 mt-4">
+
+<button class="btn btn-success w-100">
+
+{{ t('btn_recommend_crops') }}
+
+</button>
+
+</div>
+
+</div>
+
+</form>
+
+{% if recommendations %}
+
+<hr>
+
+<h3 class="text-center text-success">
+
+{{ t('top20_recommended_crops') }}
+</h3>
+
+{% if ai_active %}
+<p class="text-center text-muted">
+{{ t('ai_powered_rf_crop') }}
+</p>
+{% else %}
+<p class="text-center text-muted">
+{{ t('ai_inactive_rf_crop') }}
+</p>
+{% endif %}
+
+<div class="table-responsive">
+
+<table class="table table-bordered table-hover">
+
+<thead class="table-success">
+
+<tr>
+
+<th>{{ t('th_rank') }}</th>
+
+<th>{{ t('th_crop') }}</th>
+
+<th>{{ t('th_score') }}</th>
+
+<th>{{ t('th_ai_confidence') }}</th>
+
+<th>{{ t('th_rating') }}</th>
+
+<th>{{ t('th_status') }}</th>
+
+<th>{{ t('th_water') }}</th>
+
+<th>{{ t('th_yield') }}</th>
+
+<th>{{ t('th_duration') }}</th>
+
+<th>{{ t('th_fertilizer') }}</th>
+
+<th>{{ t('th_profit') }}</th>
+
+<th>{{ t('th_why_recommended') }}</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+{% for crop in recommendations %}
+
+<tr>
+
+<td>{{ loop.index }}</td>
+
+<td>{{ crop.crop }}</td>
+
+<td>{{ crop.score }}/100</td>
+
+<td>{{ crop.ml_confidence }}%</td>
+
+<td>{{ crop.stars }}</td>
+
+<td>{{ crop.status }}</td>
+
+<td>{{ crop.water }}</td>
+
+<td>{{ crop.yield }}</td>
+
+<td>{{ crop.duration }}</td>
+
+<td>{{ crop.fertilizer }}</td>
+
+<td>{{ crop.profit }}</td>
+
+<td>
+
+<ul>
+
+{% for reason in crop.reasons %}
+
+<li>{{ reason }}</li>
+
+{% endfor %}
+
+</ul>
+
+</td>
+
+</tr>
+
+{% endfor %}
+
+</tbody>
+
+</table>
+
+</div>
+
+{% endif %}
+
+</div>
+
+</div>
+
+{% endblock %}

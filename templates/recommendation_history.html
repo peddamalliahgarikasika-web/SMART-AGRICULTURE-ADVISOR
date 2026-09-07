@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+<div class="card shadow p-4">
+
+<h2 class="text-success">
+
+Recommendation History
+
+</h2>
+
+<table class="table table-bordered">
+
+<thead class="table-success">
+
+<tr>
+
+<th>User</th>
+
+<th>State</th>
+
+<th>Soil</th>
+
+<th>Season</th>
+
+<th>Crop</th>
+
+<th>Score</th>
+
+<th>Date</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+{% for row in history %}
+
+<tr>
+
+<td>{{row.username}}</td>
+
+<td>{{row.state}}</td>
+
+<td>{{row.soil}}</td>
+
+<td>{{row.season}}</td>
+
+<td>{{row.recommended_crop}}</td>
+
+<td>{{row.score}}</td>
+
+<td>{{row.created_at}}</td>
+
+</tr>
+
+{% endfor %}
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+{% endblock %}

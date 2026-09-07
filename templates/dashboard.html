@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class="text-center text-success mb-5">
+    Smart Agriculture Dashboard
+</h1>
+
+<div class="row g-4">
+
+    <!-- Crop -->
+
+    <div class="col-md-4">
+
+        <div class="card shadow-lg">
+
+            <div class="card-body text-center">
+
+                <h3>🌾 Crop Recommendation</h3>
+
+                <p>
+                    Get best crop suggestions.
+                </p>
+
+                <a href="/crop" class="btn btn-success">
+                    Open
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Weather -->
+
+    <div class="col-md-4">
+
+        <div class="card shadow-lg">
+
+            <div class="card-body text-center">
+
+                <h3>☁ Weather</h3>
+
+                <p>
+                    Weekly weather prediction.
+                </p>
+
+                <a href="/weather" class="btn btn-primary">
+                    Open
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Fertilizer -->
+
+    <div class="col-md-4">
+
+        <div class="card shadow-lg">
+
+            <div class="card-body text-center">
+
+                <h3>🌱 Fertilizer</h3>
+
+                <p>
+                    Best fertilizer suggestions.
+                </p>
+
+                <a href="/fertilizer" class="btn btn-warning">
+                    Open
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Disease -->
+
+    <div class="col-md-4">
+
+        <div class="card shadow-lg">
+
+            <div class="card-body text-center">
+
+                <h3>🦠 Disease Detection</h3>
+
+                <p>
+                    Detect crop diseases.
+                </p>
+
+                <a href="/disease" class="btn btn-danger">
+                    Open
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Tips -->
+
+    <div class="col-md-4">
+
+        <div class="card shadow-lg">
+
+            <div class="card-body text-center">
+
+                <h3>📘 Agriculture Tips</h3>
+
+                <p>
+                    Smart farming tips.
+                </p>
+
+                <a href="/tips" class="btn btn-info">
+                    Open
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Contact -->
+
+    <div class="col-md-4">
+
+        <div class="card shadow-lg">
+
+            <div class="card-body text-center">
+
+                <h3>📞 Contact</h3>
+
+                <p>
+                    Contact administrator.
+                </p>
+
+                <a href="/contact" class="btn btn-dark">
+                    Open
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

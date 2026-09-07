@@ -1,0 +1,588 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+<div class="card shadow-lg border-0">
+
+<div class="card-header bg-success text-white text-center">
+
+<h2>🌿 {{ t('disease_title') }}</h2>
+
+<p>{{ t('disease_subtitle') }}</p>
+
+</div>
+
+<div class="card-body">
+
+<form method="POST" enctype="multipart/form-data">
+
+{% if ai_active %}
+<div class="alert alert-success">
+{{ t('disease_ai_active') }}
+</div>
+{% elif symptom_ai_active %}
+<div class="alert alert-success">
+{{ t('ai_symptom_inactive') }}
+</div>
+{% else %}
+<div class="alert alert-warning">
+⚠ {{ t('disease_ai_inactive') }}
+</div>
+{% endif %}
+
+<div class="row">
+
+<!-- Crop -->
+
+<div class="col-md-4 mb-3">
+
+<label class="form-label"><b>{{ t('disease_select_crop') }}</b></label>
+
+<select class="form-control" name="crop" required>
+
+<option value="">{{ t('disease_select_crop') }}</option>
+
+{% for c in ["Rice","Wheat","Maize","Tomato","Potato","Banana","Cotton","Chilli","Groundnut","Mango","Apple","Orange","Grapes","Onion","Garlic","Soybean"] %}
+<option value="{{ c }}">{{ t('crop_' ~ c) }}</option>
+{% endfor %}
+
+</select>
+
+</div>
+
+<!-- Leaf Color -->
+
+<div class="col-md-4 mb-3">
+
+<label class="form-label"><b>{{ t('label_leaf_color') }}</b></label>
+
+<select class="form-control" name="leaf_color">
+
+{% for c in ["Green","Yellow","Brown","Black","White"] %}
+<option value="{{ c }}">{{ t('opt_color_' ~ c) }}</option>
+{% endfor %}
+
+</select>
+
+</div>
+
+<!-- Spot Color -->
+
+<div class="col-md-4 mb-3">
+
+<label class="form-label"><b>{{ t('label_spot_color') }}</b></label>
+
+<select class="form-control" name="spot_color">
+
+{% for c in ["None","Brown","Black","White","Yellow"] %}
+<option value="{{ c }}">{{ t('opt_color_' ~ c) }}</option>
+{% endfor %}
+
+</select>
+
+</div>
+
+<!-- Spot Size -->
+
+<div class="col-md-4 mb-3">
+
+<label class="form-label"><b>{{ t('label_spot_size') }}</b></label>
+
+<select class="form-control" name="spot_size">
+
+{% for c in ["None","Small","Medium","Large"] %}
+<option value="{{ c }}">{{ t('opt_size_' ~ c) }}</option>
+{% endfor %}
+
+</select>
+
+</div>
+
+<!-- Leaf Curl -->
+
+<div class="col-md-4 mb-3">
+
+<label class="form-label"><b>{{ t('label_leaf_curl') }}</b></label>
+
+<select class="form-control" name="leaf_curl">
+
+<option value="No">{{ t('opt_yesno_No') }}</option>
+<option value="Yes">{{ t('opt_yesno_Yes') }}</option>
+
+</select>
+
+</div>
+
+<!-- Powder -->
+
+<div class="col-md-4 mb-3">
+
+<label class="form-label"><b>{{ t('label_powder') }}</b></label>
+
+<select class="form-control" name="powder">
+
+<option value="No">{{ t('opt_yesno_No') }}</option>
+<option value="Yes">{{ t('opt_yesno_Yes') }}</option>
+
+</select>
+
+</div>
+<!-- Stem Condition -->
+
+<div class="col-md-4 mb-3">
+
+<label class="form-label"><b>{{ t('label_stem') }}</b></label>
+
+<select class="form-control" name="stem">
+
+{% for c in ["Healthy","Rotten","Dry","Cracked"] %}
+<option value="{{ c }}">{{ t('opt_stem_' ~ c) }}</option>
+{% endfor %}
+
+</select>
+
+</div>
+
+<!-- Temperature -->
+
+<div class="col-md-4 mb-3">
+
+<label class="form-label"><b>{{ t('label_temperature') }}</b></label>
+
+<input
+type="number"
+step="0.1"
+class="form-control"
+name="temperature"
+required>
+
+</div>
+
+<!-- Humidity -->
+
+<div class="col-md-4 mb-3">
+
+<label class="form-label"><b>{{ t('label_humidity') }}</b></label>
+
+<input
+type="number"
+step="0.1"
+class="form-control"
+name="humidity"
+required>
+
+</div>
+
+<!-- Rainfall -->
+
+<div class="col-md-4 mb-3">
+
+<label class="form-label"><b>{{ t('label_rainfall') }}</b></label>
+
+<input
+type="number"
+step="0.1"
+class="form-control"
+name="rainfall"
+required>
+
+</div>
+
+<!-- Leaf Image -->
+
+<div class="col-md-8 mb-3">
+
+<label class="form-label"><b>{{ t('label_upload_leaf_image') }}</b></label>
+
+<input
+type="file"
+class="form-control"
+name="image"
+accept="image/*">
+
+</div>
+
+<!-- Submit Button -->
+
+<div class="col-md-12 mt-3">
+
+<button
+type="submit"
+class="btn btn-success btn-lg w-100">
+
+🔍 {{ t('disease_detect_btn') }}
+
+</button>
+
+</div>
+
+</div>
+
+</form>
+
+{% if result %}
+
+<hr>
+
+<div class="card shadow">
+
+<div class="card-header bg-primary text-white">
+
+<h3 class="text-center">
+
+{{ t('disease_analysis_report') }}
+
+</h3>
+
+</div>
+
+<div class="card-body">
+
+<div class="row">
+
+<div class="col-md-4 text-center">
+
+{% if image %}
+
+<img
+src="/{{ image }}"
+class="img-fluid rounded shadow"
+style="max-height:300px;">
+
+{% else %}
+
+<p class="text-muted">{{ t('no_image_uploaded') }}</p>
+
+{% endif %}
+
+</div>
+
+<div class="col-md-8">
+
+<table class="table table-bordered">
+
+<tr>
+
+<th width="35%">{{ t('th_diagnosis_method') }}</th>
+
+<td>{{ result.diagnosis_method }}</td>
+
+</tr>
+
+<tr>
+
+<th width="35%">{{ t('th_disease_crop') }}</th>
+
+<td>{{ result.crop }}</td>
+
+</tr>
+
+<tr>
+
+<th>{{ t('th_disease_name') }}</th>
+
+<td>{{ result.disease }}</td>
+
+</tr>
+
+<tr>
+
+<th>{{ t('th_confidence') }}</th>
+
+<td>{{ result.confidence }}%</td>
+
+</tr>
+
+<tr>
+
+<th>{{ t('th_severity') }}</th>
+
+<td>{{ result.severity }}</td>
+
+</tr>
+
+<tr>
+
+<th>{{ t('th_cause') }}</th>
+
+<td>{{ result.cause }}</td>
+
+</tr>
+
+<tr>
+
+<th>{{ t('th_medicine') }}</th>
+
+<td>{{ result.medicine }}</td>
+
+</tr>
+<tr>
+
+<th>{{ t('th_dosage') }}</th>
+
+<td>{{ result.dosage }}</td>
+
+</tr>
+
+<tr>
+
+<th>{{ t('th_spray_interval') }}</th>
+
+<td>{{ result.spray }}</td>
+
+</tr>
+
+<tr>
+
+<th>{{ t('th_recommended_fertilizer') }}</th>
+
+<td>{{ result.fertilizer }}</td>
+
+</tr>
+
+<tr>
+
+<th>{{ t('th_recovery_time') }}</th>
+
+<td>{{ result.recovery }}</td>
+
+</tr>
+
+<tr>
+
+<th>{{ t('th_estimated_yield_loss') }}</th>
+
+<td>{{ result.yield_loss }}</td>
+
+</tr>
+
+<tr>
+
+<th>{{ t('th_prevention') }}</th>
+
+<td>{{ result.prevention }}</td>
+
+</tr>
+
+<tr>
+
+<th>{{ t('th_disease_risk_score') }}</th>
+
+<td>
+
+<div class="progress">
+
+<div
+class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+role="progressbar"
+aria-valuemin="0"
+aria-valuemax="100"
+aria-valuenow="{{ result.risk_score }}"
+
+{{ result.risk_score }}%
+
+</div>
+
+</div>
+
+<br>
+
+<b>{{ t('th_risk_level') }} :</b>
+
+<span class="badge bg-danger">
+
+{{ result.risk_level }}
+
+</span>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<hr>
+
+<h4 class="text-success">
+
+{{ t('leaf_image_analysis') }}
+
+</h4>
+
+{% if result.image_report %}
+
+<table class="table table-bordered table-hover">
+
+<tr>
+
+<th>{{ t('th_green_area') }}</th>
+
+<td>{{ result.image_report.green }}%</td>
+
+</tr>
+
+<tr>
+
+<th>{{ t('th_yellow_area') }}</th>
+
+<td>{{ result.image_report.yellow }}%</td>
+
+</tr>
+
+<tr>
+
+<th>{{ t('th_brown_area') }}</th>
+
+<td>{{ result.image_report.brown }}%</td>
+
+</tr>
+
+<tr>
+
+<th>{{ t('th_black_area') }}</th>
+
+<td>{{ result.image_report.black }}%</td>
+
+</tr>
+
+</table>
+
+{% else %}
+
+<div class="alert alert-warning">
+
+{{ t('no_image_analysis') }}
+
+</div>
+
+{% endif %}
+
+<hr>
+
+<h4 class="text-danger">
+
+{{ t('disease_risk_reasons') }}
+
+</h4>
+
+<ul>
+
+{% for reason in result.risk_reason %}
+
+<li>{{ reason }}</li>
+
+{% endfor %}
+
+</ul>
+
+{% if result.reasons %}
+
+<ul>
+
+{% for reason in result.reasons %}
+
+<li>{{ reason }}</li>
+
+{% endfor %}
+
+</ul>
+
+{% endif %}
+
+<hr>
+
+<div class="row">
+
+<div class="col-md-6 text-center">
+
+<h4 class="text-primary">
+
+{{ t('disease_image_heading') }}
+
+</h4>
+
+{% if result.disease_image %}
+
+<img
+src="{{ url_for('static', filename='disease_images/' ~ result.disease_image) }}"
+class="img-fluid rounded shadow"
+style="max-height:250px;">
+
+{% else %}
+
+<p class="text-muted">
+
+{{ t('no_disease_image') }}
+
+</p>
+
+{% endif %}
+
+</div>
+
+<div class="col-md-6 text-center">
+
+<h4 class="text-success">
+
+{{ t('recommended_medicine_heading') }}
+
+</h4>
+
+{% if result.medicine_image %}
+
+<img
+src="{{ url_for('static', filename='medicine_images/' ~ result.medicine_image) }}"
+class="img-fluid rounded shadow"
+style="max-height:250px;">
+
+{% else %}
+
+<p class="text-muted">
+
+{{ t('no_medicine_image') }}
+
+</p>
+
+{% endif %}
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="text-center mt-4">
+
+<a href="/download_report"
+class="btn btn-danger btn-lg">
+
+{{ t('btn_download_pdf') }}
+
+</a>
+
+<a href="/disease"
+class="btn btn-primary btn-lg ms-2">
+
+{{ t('btn_analyze_another') }}
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+{% endif %}
+
+</div>
+
+</div>
+
+{% endblock %}
